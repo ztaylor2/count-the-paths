@@ -18,8 +18,7 @@ def count_path_recursive(m, n):
 def count_path_dynamic(m, n):
     """Count number of paths with dynamic method."""
     # create 2d array to store values
-    paths = [[0 for x in range(m)] for y in range(n)]
-
+    paths = [[0 for x in range(n)] for y in range(m)]
     # set num of paths on edges to one
     for i in range(m):
         paths[i][0] = 1
